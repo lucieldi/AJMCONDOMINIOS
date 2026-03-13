@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# AJM Condomínio - Site Institucional
 
-# Run and deploy your AI Studio app
+Este projeto foi desenvolvido com **React**, **TypeScript** e **Tailwind CSS**, utilizando **Vite** como ferramenta de build.
 
-This contains everything you need to run your app locally.
+## 🚀 Como rodar localmente
 
-View your app in AI Studio: https://ai.studio/apps/f3c974cb-aa5a-4bab-8e77-ae4347eb957b
+Siga os passos abaixo para configurar o ambiente em sua máquina:
 
-## Run Locally
+### 1. Pré-requisitos
+Certifique-se de ter o [Node.js](https://nodejs.org/) instalado (versão 18 ou superior).
 
-**Prerequisites:**  Node.js
+### 2. Instalação
+Clone o repositório e instale as dependências:
+```bash
+npm install
+```
 
+### 3. Desenvolvimento
+Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+```
+O site estará disponível em `http://localhost:3000`.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 4. Build para Produção
+Para gerar os arquivos otimizados para deploy:
+```bash
+npm run build
+```
+
+## 🛠️ Tecnologias Utilizadas
+- **React 18**
+- **TypeScript**
+- **Tailwind CSS** (Estilização)
+- **Lucide React** (Ícones)
+- **Framer Motion** (Animações)
+- **Vite** (Build Tool)
+
+## 📝 Configuração do VS Code
+Ao abrir este projeto no VS Code, o editor sugerirá a instalação de extensões recomendadas para:
+- Formatação automática com **Prettier**.
+- Suporte a classes do **Tailwind CSS**.
+- Linting com **ESLint**.

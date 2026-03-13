@@ -45,12 +45,7 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/80 backdrop-blur-lg py-3 border-b border-white/5 shadow-2xl' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <div className="bg-blue-600 p-2 rounded-lg">
-            <Building2 className="text-white w-6 h-6" />
-          </div>
-          <span className="font-bold text-xl tracking-tight text-white font-display">
-            AJM <span className="font-light text-blue-400">Condomínio</span>
-          </span>
+          {/* Logo moved to Hero section as per request */}
         </div>
 
         {/* Desktop Nav */}
@@ -118,7 +113,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 items-center gap-12">
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -128,10 +123,10 @@ const Hero = () => {
           <span className="inline-block py-1 px-3 rounded-full bg-blue-600/10 border border-blue-600/30 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6">
             Gestão Profissional de Condomínios
           </span>
-          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6 font-display">
-            Sua tranquilidade é o nosso <span className="text-blue-500">compromisso.</span>
+          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6 font-display">
+            Sua tranquilidade é o nosso <span className="text-blue-600">compromisso.</span>
           </h1>
-          <p className="text-xl text-zinc-400 mb-10 leading-relaxed">
+          <p className="text-lg text-zinc-400 mb-10 leading-relaxed">
             A AJM Condomínio oferece soluções completas em administração, transparência financeira e manutenção preventiva para valorizar o seu patrimônio.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -143,6 +138,20 @@ const Hero = () => {
               Conheça Nossos Planos
             </button>
           </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, x: 50 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="hidden lg:flex justify-end"
+        >
+          <img 
+            src="https://static.wixstatic.com/media/3ef599_4223ef07179248fa80aa64109d8c501a~mv2.png/v1/fill/w_800,h_533,al_c,q_90/logo%20ajm%20com%20sel%20quality.png" 
+            alt="AJM Condomínio Logo Grande" 
+            className="w-full max-w-md h-auto object-contain drop-shadow-[0_0_30px_rgba(37,99,235,0.3)]"
+            referrerPolicy="no-referrer"
+          />
         </motion.div>
       </div>
 
@@ -398,12 +407,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-2 mb-6">
-              <div className="bg-blue-600 p-2 rounded-lg">
-                <Building2 className="text-white w-5 h-5" />
-              </div>
-              <span className="font-bold text-xl tracking-tight">
-                AJM <span className="font-light text-blue-400">Condomínio</span>
-              </span>
+              <img 
+                src="https://static.wixstatic.com/media/3ef599_4223ef07179248fa80aa64109d8c501a~mv2.png/v1/fill/w_400,h_267,al_c,q_90/logo%20ajm%20com%20sel%20quality.png" 
+                alt="AJM Condomínio Logo" 
+                className="h-16 w-auto object-contain"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <p className="text-slate-500 text-sm leading-relaxed mb-6">
               Excelência em gestão condominial com foco em transparência, tecnologia e valorização patrimonial.
